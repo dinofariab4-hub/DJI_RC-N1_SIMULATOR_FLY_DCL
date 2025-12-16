@@ -190,7 +190,7 @@ thread.start()
 
 try:
     # enable simulator mode for RC (without this stick positions are sent very slow by RC)
-    send_duml(s, 0x0a, 0x06, 0x40, 0x06, 0x24, bytearray.fromhex('01'))
+    send_duml(st, 0x0a, 0x06, 0x40, 0x06, 0x24, bytearray.fromhex('01'))
 
     while True:
 
